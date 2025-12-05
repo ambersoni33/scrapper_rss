@@ -4,15 +4,17 @@ import csv from "csv-parser";
 import RSSParser from "rss-parser";
 import pLimit from "p-limit";
 import { Client } from "pg";
+import dotenv from "dotenv";
+dotenv.config();
 
 /* ---------- CONFIG ---------- */
 const parser = new RSSParser();
 const DB = new Client({
-   user: "postgres",
-  password: "Amber786",
-  host: "localhost",
-  port: 5432,
-  database: "StockData",
+   user: process.env.USER,
+  password: process.env.PASSWORD,
+  host: process.env.HOST,
+  port: process.env.PORT,
+  database:process.env.DATABASE,
 });
 
 const CSV = "./nse.csv";
