@@ -1,0 +1,21 @@
+{
+  "name": "news_scrapper_stocks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "csv-parser": "^3.2.0",
+    "node-cron": "^4.2.1",
+    "p-limit": "^7.2.0",
+    "pg": "^8.16.3",
+    "rss-parser": "^3.13.0",
+    "yahoo-finance2": "^3.10.2"
+  }
+}
